@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Peliculas</title>
+</head>
+
+<body class="container">
+    <header class="header">
+        <div class="slider">
+            <img src="../public/super-mario.jpg" alt="super-mario" class="image1" />
+            <img src="../public/john-wick.jpg" alt="john-wick" class="image1" />
+            <img src="../public/hombre-arana.jpg" alt="hombre-arana" class="image1" />
+
+        </div>
+        <div class="title-start">
+            <h1 class="title">Buscador de Peliculas</h1>
+            <a href="#main" class="btn btn-start" id="start">Comenzar</a href="main">
+        </div>
+    </header>
+    <main id="main" class="main">
+        <section class="main-form">
+            <h2 class="subtitulo">Buscar peliculas</h2>
+            <form class="form" action="">
+
+                <label for="fromDate">Desde:</label>
+                <input id="fromDate" class="input-form" type="date" >
+
+                <label for="toDate">Hasta:</label>
+                <input id="toDate" class="input-form" type="date" >
+
+                <label for="rate">Calificación:</label>
+                <input id="rate" class="input-form" type="text" >
+
+                <label for="userId">Usuario:</label>
+                <input id="userId" type="number">
+
+                <button class="btn btn-find">Buscar</button>
+            </form>
+        </section>
+        <div>
+            <span class="loader"></span>
+        </div>
+        <h2 id="results-title" class="results-title-off">Resultados:</h2>
+        <section id="result" class="result result-off">
+          
+        </section>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+
+    <script src="./scripts/movies-filter.js"></script>
+</body>
+
+</html>
